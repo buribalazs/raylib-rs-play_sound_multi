@@ -1,11 +1,9 @@
-use std::env::{current_dir};
 use raylib::prelude::*;
 use raylib::core::audio::{ Sound, RaylibAudio };
 
 
 
 fn main() {
-    println!("{:?}", current_dir());
     let (mut rl, thread) = raylib::init()
     .size(640, 480)
     .title("Hello, World")
